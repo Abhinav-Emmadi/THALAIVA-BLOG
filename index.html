@@ -1,24 +1,227 @@
-<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thalaivar Intro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-                            Online HTML Compiler.
-                Code, Compile, Run and Debug HTML program online.
-Write your code in this editor and press "Run" button to execute it.
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      overflow: hidden;
+      font-family: monospace;
+    }
 
--->
+    .container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
 
-<html>
-  <body>
-  <form action="post" method="get" accept-charset="utf-8">
-      <label for="1">Enter your name</label>
-      <input type="text" name="name" id="1" placeholder="enter" autofocus="" />
-      <div>
-          
-      <label for="2">select gender</label>
-      <input type="radio" name="gender" id="2" />
-       <label for="2">Male</label>
-      <input type="radio" name="gender" id="3"  />
-       <label for="3">Female</label>
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('t1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 0;
+    }
+
+    .container img {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      opacity: 0;
+      animation: dhalapaty 9s ease-in-out forwards;
+      z-index: 1;
+    }
+
+    .container img:nth-child(2) { animation-delay: 0s; }
+    .container img:nth-child(3) { animation-delay: 1s; }
+    .container img:nth-child(4) { animation-delay: 2s; }
+    .container img:nth-child(5) { animation-delay: 3s; }
+    .container img:nth-child(6) { animation-delay: 4s; }
+    .container img:nth-child(7) { animation-delay: 5s; }
+    .container img:nth-child(8) { animation-delay: 6s; }
+    .container img:nth-child(9) { animation-delay: 7s; }
+    .container img:nth-child(10) { animation-delay: 8s; }
+
+    @keyframes dhalapaty {
+      0%   { opacity: 0; }
+      5%   { opacity: 1; }
+      10%  { opacity: 1; }
+      15%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: red;
+      border: 2px solid black;
+      border-radius: 20px;
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+      z-index: 10;
+      white-space: nowrap;
+      opacity: 0;
+      animation: dhalapatyIn 0.5s ease forwards;
+      animation-delay: 9s;
+      cursor: pointer;
+    }
+
+    .nav .thalaiva {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid white;
+      width: 0;
+      animation: thalaiva 4s steps(30, end) 9.5s forwards, jailer 0.7s step-end infinite;
+    }
+
+    @keyframes dhalapatyIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes thalaiva {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes jailer {
+      50% { border-color: transparent; }
+    }
+
+    #rajiniInfo {
+      display: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.95);
+      padding: 30px;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+      overflow-y: auto;
+      z-index: 100;
+      border-radius: 15px;
+    }
+
+    #rajiniInfo h1 {
+      color: red;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    #rajiniInfo h2 {
+      color: #ffcc00;
+      margin-top: 20px;
+    }
+
+    #rajiniInfo p, #rajiniInfo li {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .rajini-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 0 20px 20px 0;
+  float: left; 
+}
+
+    ul {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="background"></div> 
+    <img src="t1.png" alt="">
+    <img src="t2.png" alt="">
+    <img src="t3.png" alt="">
+    <img src="t4.png" alt="">
+    <img src="t5.png" alt="">
+    <img src="t6.png" alt="">
+    <img src="t7.png" alt="">
+    <img src="t8.png" alt="">
+    <img src="t9.png" alt="">
+
+    <div class="nav">
+      <span class="thalaiva">Coo Coolie Powerhousey🗣️🗣️🗣️</span>
     </div>
-  </form>
-  </body>
-  </html>
+    <div id="rajiniInfo" class="dhalapathy">
+  <img src="t11.png" alt="Rajinikanth Profile" class="rajini-image">
+  <h1>Thalaivar: The Legend of Rajinikanth<br>
+  FROM BUS CONDUCTOR TO ONE AND ONLY SUPERSTAR🔥🔥</h1>
+
+  <h2>About Rajinikanth</h2>
+  <p>Shivaji Rao Gaekwad (born 12 December 1950), RAJNIKANTH our beloved only Superstar THALAIVA🔥🔥, is an Indian actor, producer, and screenwriter who works primarily in Tamil cinema. Referred to as "Thalaivar" (leader) and "Superstar" by his fans, he has been described as one of the greatest actors in the history of Indian cinema.</p>
+  <p>His distinctive acting style, including his mannerisms, dialogue delivery, and unique charisma, has earned him a massive fan following globally. Starting his career with antagonistic and supporting roles, he quickly rose to prominence as a leading man, establishing himself as a commercial powerhouse.</p>
+
+  <h2>Achievements and Awards</h2>
+  <ul>
+    <li>Padma Vibhushan (2016) - India's second-highest civilian honor.</li>
+    <li>Padma Bhushan (2000) - India's third-highest civilian honor.</li>
+    <li>Dadasaheb Phalke Award (2019) - India's highest honor in cinema.</li>
+    <li>Recipient of numerous Filmfare Awards South, Cinema Express Awards, and Tamil Nadu State Film Awards.</li>
+    <li>Honored with the Chevalier de l'Ordre des Arts et des Lettres by the Government of France in 2016.</li>
+    <li>One of the highest-grossing actors in the history of Indian cinema.</li>
+  </ul>
+
+  <h2>Notable Films</h2>
+  <p>Rajinikanth has starred in over 160 films across various languages, predominantly in Tamil. Some of his iconic works include:</p>
+  <ul>
+    <li>Mullum Malarum (1978)</li>
+    <li>Billa (1980)</li>
+    <li>Murattu Kaalai (1980)</li>
+    <li>Thalapathi (1991)</li>
+    <li>Annamalai (1992)</li>
+    <li>Baashha (1995)</li>
+    <li>Muthu (1995)</li>
+    <li>Padayappa (1999)</li>
+    <li>Chandramukhi (2005)</li>
+    <li>Sivaji (2007)</li>
+    <li>Enthiran (2010)</li>
+    <li>Kabali (2016)</li>
+    <li>2.0 (2018)</li>
+    <li>Jailer (2023)</li>
+  </ul>
+
+  <p>This is just a glimpse into the illustrious career of the one and only Thalaivar! His impact on Indian cinema and pop culture is immeasurable.</p>
+
+  <h2>Contact Info</h2>
+  <p>IN EVERY FAN’S HEART🔥🔥</p>
+</div>
+  <script>
+    document.querySelector('.nav').addEventListener('click', function () {
+      document.getElementById('rajiniInfo').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
